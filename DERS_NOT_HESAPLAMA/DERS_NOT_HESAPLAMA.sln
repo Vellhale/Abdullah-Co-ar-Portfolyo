@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DERS_NOT_HESAPLAMA", "DERS_NOT_HESAPLAMA\DERS_NOT_HESAPLAMA.csproj", "{EFA51A1A-943A-4D86-BC84-C165BEBBDC88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFA51A1A-943A-4D86-BC84-C165BEBBDC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA51A1A-943A-4D86-BC84-C165BEBBDC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA51A1A-943A-4D86-BC84-C165BEBBDC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA51A1A-943A-4D86-BC84-C165BEBBDC88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
