@@ -1,0 +1,239 @@
+/* Genel Sayfa Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Mor-Mavi geçişli arka plan */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Ana Kutunun Tasarımı */
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+header h1 {
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #888;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Giriş Alanı Tasarımı */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #764ba2;
+}
+
+#addBtn {
+    padding: 12px 20px;
+    background-color: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+#addBtn:hover {
+    background-color: #5c3882;
+}
+
+/* Liste Alanı Tasarımı */
+.list-container {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.list-container h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* İsimler sığmazsa alt satıra geçsin */
+    gap: 8px;
+    max-height: 150px;
+    overflow-y: auto; /* Çok isim olursa kaydırma çubuğu çıksın */
+    padding-right: 5px;
+}
+
+/* Eklenen İsimlerin (Etiketlerin) Görünümü */
+ul li {
+    background-color: #f0f2f5;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: fadeIn 0.3s ease; /* Eklendiğinde yumuşakça gelsin */
+}
+
+/* Silme (Çarpı) Butonu */
+ul li span {
+    cursor: pointer;
+    color: #ff4757;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+ul li span:hover {
+    color: #d63031;
+}
+
+
+
+/* Aksiyon Butonları */
+.action-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #11998e, #38ef7d); /* Yeşil geçiş */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.primary-btn:hover {
+    transform: scale(1.02); /* Üzerine gelince hafif büyüsün */
+}
+
+.secondary-btn {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+/* Sonuç Alanı */
+#resultContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fdf2e9;
+    border: 2px dashed #e67e22;
+    border-radius: 10px;
+}
+
+#winnerName {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d35400;
+    margin-top: 10px;
+}
+
+/* Yardımcı Sınıflar */
+.hidden {
+    display: none;
+}
+
+/* Animasyon Tanımı */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Dosya Sekmeleri Alanı */
+.files-section {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.file-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.file-tab {
+    background-color: #eef2f3;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Seçili olan dosyanın rengi */
+.file-tab.active {
+    background-color: #764ba2;
+    color: white;
+    border-color: #764ba2;
+    box-shadow: 0 4px 6px rgba(118, 75, 162, 0.3);
+}
+
+.file-tab:hover {
+    background-color: #d1d8dd;
+}
+
+.file-tab.active:hover {
+    background-color: #5c3882;
+}
+
+/* Dosya silme (küçük çarpı) butonu */
+.delete-file-btn {
+    font-weight: bold;
+    color: #ff4757;
+    margin-left: 5px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    font-size: 10px;
+    line-height: 1;
+}
+
+.delete-file-btn:hover {
+    background: #ff4757;
+    color: white;
+}

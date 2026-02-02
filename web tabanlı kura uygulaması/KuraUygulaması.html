@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kura Çekme Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎉 Şanslı Kura 🎉</h1>
+            <p>Katılımcıları ekleyin ve kazananı belirleyin!</p>
+        </header>
+
+       <div class="input-section" style="flex-direction: column;">
+            <div style="display: flex; gap: 10px; width: 100%;">
+                <input type="text" id="participantInput" placeholder="İsim yazıp Enter'a basın...">
+                <button id="addBtn">Ekle</button>
+            </div>
+            
+            <div style="margin-top: 10px; text-align: left; width: 100%;">
+                <label for="fileInput" style="font-size: 0.9rem; color: #555;">veya .txt dosyası yükleyin:</label>
+                <input type="file" id="fileInput" accept=".txt" style="border: 1px dashed #764ba2; background: #fdfdfd;">
+            </div>
+        </div>
+        <div class="files-section">
+            <h3 style="font-size: 0.9rem; color: #666; margin-bottom: 5px;">Yüklü Listeler:</h3>
+            <div id="fileTabs" class="file-tabs">
+                </div>
+        </div>
+
+        <div class="list-container">
+            <h3>Katılımcılar (<span id="count">0</span>)</h3>
+            <ul id="participantList">
+                </ul>
+        </div>
+
+        <div class="action-section">
+            <button id="drawBtn" class="primary-btn">Kurayı Çek! 🎲</button>
+            <button id="clearBtn" class="secondary-btn">Listeyi Temizle</button>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <h2>Kazanan:</h2>
+            <div id="winnerName">???</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
