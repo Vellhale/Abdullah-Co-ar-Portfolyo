@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Finans Stratejisti</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #eef2f3; padding: 20px; display: flex; justify-content: center; }
+        .container { width: 100%; max-width: 900px; display: grid; gap: 20px; }
+        .kart { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        h2 { margin-top: 0; color: #333; }
+        
+        /* Fiyat Kutusu */
+        .fiyat-kutu { text-align: center; background: #fff8e1; border: 1px solid #ffe082; color: #d4af37; padding: 15px; border-radius: 10px; font-size: 24px; font-weight: bold; }
+
+        /* Yükleme Alanı */
+        .yukleme-alani { border: 2px dashed #ccc; padding: 20px; text-align: center; border-radius: 10px; cursor: pointer; transition: 0.3s; margin-top: 10px;}
+        .yukleme-alani:hover { border-color: #3949ab; background: #f0f4ff; }
+        
+        /* Chat Alanı */
+        .chat-kutu { height: 300px; overflow-y: auto; border: 1px solid #eee; padding: 15px; background: #fafafa; border-radius: 10px; margin-bottom: 15px; }
+        .mesaj { margin-bottom: 10px; padding: 10px; border-radius: 10px; max-width: 80%; line-height: 1.4; }
+        .mesaj.kullanici { background: #3949ab; color: white; margin-left: auto; text-align: right; }
+        .mesaj.bot { background: #e0e0e0; color: #333; }
+        
+        /* Girdi Alanları */
+        .girdi-alani { display: flex; gap: 10px; }
+        input[type="text"] { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 20px; outline: none; }
+        button { padding: 10px 20px; border: none; border-radius: 20px; background: #3949ab; color: white; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        button:hover { background: #283593; transform: scale(1.05); }
+        button:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+        
+        /* Seçim Kutusu */
+        select { padding: 10px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 10px; width: 100%; cursor: pointer; }
+
+        /* YENİ: Canlı Analiz Kartı Özel Stili */
+        .analiz-karti {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+        .analiz-karti h2 { color: white; }
+        .analiz-btn { background: #ff9800 !important; color: white; }
+        .analiz-btn:hover { background: #e68900 !important; }
+        .analiz-sonuc {
+            margin-top: 15px; 
+            background: rgba(255,255,255,0.1); 
+            padding: 20px; 
+            border-radius: 10px; 
+            display: none; 
+            font-size: 15px; 
+            line-height: 1.6;
+            border-left: 4px solid #ff9800;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="kart">
+        <div class="fiyat-kutu" id="fiyatKutusu">Gram Altın: Yükleniyor...</div>
+    </div>
+
+    <div class="kart analiz-karti">
+        <h2>🌍 Canlı Piyasa Analizi</h2>
+        <p style="font-size: 14px; opacity: 0.9;">Yapay Zeka, Reuters/Bloomberg haberlerini tarar ve PDF raporlarınızla birleştirip yorumlar.</p>
+        
+        <div style="display: flex; gap: 10px;">
+            <select id="kategoriAnaliz" style="color: black; flex: 1;">
+                <option value="altin">🥇 Altın Haberlerini Yorumla</option>
+                <option value="borsa">📈 Borsa Haberlerini Yorumla</option>
+            </select>
+            <button onclick="canliAnalizYap()" class="analiz-btn" id="analizBtn">ANALİZ BAŞLAT 🚀</button>
+        </div>
+        
+        <div id="analizSonucu" class="analiz-sonuc">
+            </div>
+    </div>
+
+    <div class="kart">
+        <h2>📚 Bilgi Kütüphanesi</h2>
+        <p style="font-size: 14px; color: #666;">Yapay zekanın hafızasını güçlendirmek için rapor yükleyin.</p>
+        <select id="kategoriSecimYukle">
+            <option value="altin">🥇 Altın Piyasası (Raporlar)</option>
+            <option value="borsa">📈 Borsa / Hisse (Bilançolar)</option>
+        </select>
+        <div class="yukleme-alani" onclick="document.getElementById('fileInput').click()">
+            <span id="yuklemeMetni">📂 PDF Yüklemek İçin Tıkla</span>
+            <input type="file" id="fileInput" accept=".pdf" style="display:none" onchange="dosyaYukle()">
+        </div>
+    </div>
+
+    <div class="kart">
+        <h2>🤖 AI Uzmanına Sor</h2>
+        <select id="kategoriSecimSoru">
+            <option value="altin">🥇 Altın Uzmanına Sor</option>
+            <option value="borsa">📈 Borsa Uzmanına Sor</option>
+        </select>
+        <div class="chat-kutu" id="chatKutusu">
+            <div class="mesaj bot">Merhaba! Haberleri takip ediyorum ve raporları okudum. Bana sorabilirsin.</div>
+        </div>
+        <div class="girdi-alani">
+            <input type="text" id="soruGirdisi" placeholder="Örn: Fed kararı altını nasıl etkiler?">
+            <button onclick="soruSor()" id="gonderBtn">Gönder</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Fiyatı Çek
+    fetch('/api/fiyat').then(r => r.json()).then(d => { document.getElementById('fiyatKutusu').innerText = "Gram Altın: " + d.fiyat + " ₺"; });
+
+    // Dosya Yükleme Fonksiyonu
+    function dosyaYukle() {
+        const input = document.getElementById('fileInput');
+        const file = input.files[0];
+        const kategori = document.getElementById('kategoriSecimYukle').value;
+        if (!file) return;
+
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('kategori', kategori);
+        
+        document.getElementById('yuklemeMetni').innerText = "⏳ İşleniyor... (Biraz sürebilir)";
+
+        fetch('/api/yukle', { method: 'POST', body: formData })
+            .then(r => r.json())
+            .then(data => {
+                alert(data.mesaj);
+                document.getElementById('yuklemeMetni').innerText = "📂 Başka PDF Yüklemek İçin Tıkla";
+                input.value = ""; // Inputu temizle
+            })
+            .catch(e => {
+                alert("Hata oluştu!");
+                document.getElementById('yuklemeMetni').innerText = "❌ Hata";
+            });
+    }
+
+    // Chat Fonksiyonu
+    function soruSor() {
+        const girdi = document.getElementById('soruGirdisi');
+        const btn = document.getElementById('gonderBtn');
+        const chat = document.getElementById('chatKutusu');
+        const kategori = document.getElementById('kategoriSecimSoru').value;
+        const soru = girdi.value.trim();
+        
+        if (!soru) return;
+
+        chat.innerHTML += `<div class="mesaj kullanici">${soru}</div>`;
+        chat.scrollTop = chat.scrollHeight;
+        
+        girdi.value = "";
+        btn.innerText = "...";
+        btn.disabled = true;
+
+        fetch('/api/uzmana_sor', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ soru: soru, kategori: kategori })
+        })
+        .then(r => r.json())
+        .then(data => {
+            // Cevabı formatla (Satır başlarını düzelt)
+            let formatliCevap = data.cevap.replace(/\n/g, "<br>");
+            chat.innerHTML += `<div class="mesaj bot"><b>[${kategori.toUpperCase()}]</b>:<br>${formatliCevap}</div>`;
+            chat.scrollTop = chat.scrollHeight;
+            btn.innerText = "Gönder";
+            btn.disabled = false;
+        })
+        .catch(e => {
+            chat.innerHTML += `<div class="mesaj bot" style="color:red">Bağlantı Hatası!</div>`;
+            btn.innerText = "Gönder";
+            btn.disabled = false;
+        });
+    }
+
+    // YENİ: Canlı Analiz Fonksiyonu
+    function canliAnalizYap() {
+        const kategori = document.getElementById('kategoriAnaliz').value;
+        const sonucKutusu = document.getElementById('analizSonucu');
+        const btn = document.getElementById('analizBtn');
+        
+        sonucKutusu.style.display = 'block';
+        sonucKutusu.innerHTML = "⏳ <b>Dünya haberleri taranıyor...</b><br>Global kaynaklar (Yahoo Finance, CNBC) okunuyor...<br>PDF raporlarıyla karşılaştırılıyor... Lütfen bekleyin.";
+        btn.disabled = true;
+        btn.innerText = "Analiz Yapılıyor...";
+        
+        fetch('/api/piyasa_yorumu', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ kategori: kategori })
+        })
+        .then(r => r.json())
+        .then(data => {
+            // Markdown benzeri başlıkları HTML'e çevir
+            let temizCevap = data.cevap
+                .replace(/\n/g, "<br>")
+                .replace(/\*\*(.*?)\*\*/g, "<b>$1</b>"); // **Kalın** yazı desteği
+            
+            sonucKutusu.innerHTML = `<h3>📢 STRATEJİST RAPORU (${kategori.toUpperCase()})</h3>${temizCevap}`;
+            btn.disabled = false;
+            btn.innerText = "ANALİZ BAŞLAT 🚀";
+        })
+        .catch(e => {
+            sonucKutusu.innerHTML = "❌ Hata oluştu: Bağlantı sorunu veya zaman aşımı.";
+            btn.disabled = false;
+            btn.innerText = "ANALİZ BAŞLAT 🚀";
+        });
+    }
+</script>
+
+</body>
+</html>
