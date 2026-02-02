@@ -1,0 +1,41 @@
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe.config
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csprojResolveAssemblyReference.cache
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form1.resources
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Properties.Resources.resources
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csproj.GenerateResource.Cache
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.exe
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+c:\users\kullanici\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form2.resources
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe.config
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.exe
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form1.resources
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form2.resources
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Properties.Resources.resources
+C:\Users\Abdullah COŞAR\Desktop\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csproj.GenerateResource.Cache
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe.config
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.exe
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csprojResolveAssemblyReference.cache
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form1.resources
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form2.resources
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Properties.Resources.resources
+C:\Users\Abdullah COŞAR\Desktop\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csproj.GenerateResource.Cache
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe.config
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.exe
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\bin\Debug\15.10.2025_KULLANICI_GIRISI.pdb
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csproj.AssemblyReference.cache
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form1.resources
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Form2.resources
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\_15._10._2025_KULLANICI_GIRISI.Properties.Resources.resources
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csproj.GenerateResource.cache
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.csproj.CoreCompileInputs.cache
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.exe
+C:\Users\abdul\OneDrive\Desktop\Abdullah Dosyalar\görsel programlama\15.10.2025_KULLANICI_GIRISI\15.10.2025_KULLANICI_GIRISI\obj\Debug\15.10.2025_KULLANICI_GIRISI.pdb
